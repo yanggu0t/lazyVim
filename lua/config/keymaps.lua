@@ -5,3 +5,5 @@ vim.keymap.set("i", "jj", "<Esc>")
 vim.keymap.set("i", "kk", "<Esc>")
 
 vim.keymap.set("x", "<leader>p", [["_dP]])
+
+vim.keymap.set("n", "<leader>w", "<cmd>bd<CR>", { desc = "Close current tab" })

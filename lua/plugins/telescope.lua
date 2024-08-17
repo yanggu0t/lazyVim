@@ -30,6 +30,25 @@ return {
           end
         end,
         desc = "Grep Search",
+        -- "<leader>ps",
+        --   require("telescope.builtin").grep_string({
+        --     prompt_title = "Grep Search (Exact Match)",
+        --     search = "",
+        --     use_regex = false,
+        --     word_match = "-w",
+        --     only_sort_text = true,
+        --     search_dirs = { vim.fn.getcwd() },
+        --     additional_args = function(args)
+        --       return vim.list_extend(args, {
+        --         "--hidden",
+        --         "--glob",
+        --         "!**/.git/*",
+        --         "--fixed-strings", -- 模糊搜尋
+        --       })
+        --     end,
+        --   })
+        -- end,
+        -- desc = "Direct Grep Search with Exact Matching",
       },
       { "<leader>pg", "<cmd>Telescope git_file_history<CR>", desc = "Git File History" },
     }
