@@ -5,5 +5,3 @@ vim.keymap.set("i", "jj", "<Esc>")
 vim.keymap.set("i", "kk", "<Esc>")
 
 vim.keymap.set("x", "<leader>p", [["_dP]])
-vim.api.nvim_set_keymap('n', '<leader>fg', ':Telescope live_grep<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>fb', ':Telescope current_buffer_fuzzy_find<CR>', { noremap = true, silent = true })
